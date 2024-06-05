@@ -1,0 +1,874 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&display=swap');
+/* Webfont: Reborn */@font-face {
+    font-family: 'Reborn';
+    src: url('../Assets/Fonts/Reborn.eot'); /* IE9 Compat Modes */
+    src: url('../Assets/Fonts/Reborn.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../Assets/Fonts/Reborn.woff') format('woff'), /* Modern Browsers */
+         url('../Assets/Fonts/Reborn.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .macondo-swash-caps-regular {
+    font-family: "Macondo Swash Caps", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "AR One Sans", sans-serif;
+}
+
+/*-------------------BODY----------------*/
+.background-1 {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Assets/Images/background-1.jpg");
+    background-color: #cccccc;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.background-2 {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../Assets/Images/background-3.jpg");
+    background-color: #cccccc;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*-------------------Basic----------------*/
+
+h1, h2, h3, h4, h3 a {
+    font-family: "Macondo Swash Caps", cursive
+
+}
+/*
+nav {
+    background-color: #2a2a2a6a;
+    color: #ffff;
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    padding: 5px 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 10px auto;
+    border-bottom: 3px solid;
+    border-image: radial-gradient(#fffffffe, #ffedf800) 1;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    max-width: 300px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    padding: 0 15px 0 15px;
+}
+*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+header h1 {
+    font-size: 10vh;
+}
+
+header p {
+    font-size: 3vh;
+
+}
+
+nav { color: #fff; }
+.topnav {
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    background-color: #141414;
+    
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+
+.topnav-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+  @media screen and (max-width: 700px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .topnav-container {
+        flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+
+
+header {
+    padding: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.container-column {
+    max-width: 500px;
+    width: 100%;
+    margin: 70px auto;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+}
+
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.blur-box {
+    background-color: #0000006d;
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+/*----------------------FORME---------------*/
+form {
+    padding: 15px;
+}
+
+input {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 10px 0 20px 0;
+    border: 2px solid #714210;
+    border-radius: 25px;
+    }
+
+textarea {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 10px 0 20px 0;
+    border: 2px solid #714210;
+    border-radius: 25px;
+}
+
+button {
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: #006e21;
+    color: #fff;
+    border: none;
+}
+
+button:hover {
+    background-color: #062f13;
+}
+
+/* The container */
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 6px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .checkbox-container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .checkbox-container input:checked ~ .checkmark {
+    background-color: #a12db0;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .checkbox-container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+.error-message {
+    color: red;
+}
+
+
+/*------------------USER HOME GRID------------------*/
+
+.campaigns {
+    max-width: 590px;
+    width: 100%;
+    padding: 15px;
+    background-color: #2a2a2a6a;
+    color: #fff;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.link {
+    padding: 10px 10px;
+    border-radius: 20px;
+    background-color: #930c10;
+    color: #fff;
+    border: none;
+}
+
+.campaign-card, .region-card {
+    width: 28%;
+    padding: 10px;
+    color: #000000;
+    border-radius: 10px;
+    margin: 0 10px 10px 0;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.campaign_list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0 10px 0;
+}
+
+
+.create-campaign {
+    max-width: 540px;
+    width: 100%;
+    padding: 15px;
+    background-color: #2a2a2a6a;
+    color: #fff;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.create-town {
+    width: 100%;
+    padding: 15px;
+    background-color: #2a2a2a6a;
+    color: #fff;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.grid-container { 
+    max-width: 1200px;
+    width: 100%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px 20px;
+    grid-auto-flow: row;
+}
+
+.grid-container-2 { 
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px 20px;
+    grid-auto-flow: row;
+}
+  
+.Places, .Sessions, .Campaign-info, .Party, .Story {
+    width: 100%;
+}
+
+.Places { grid-area: 1 / 9 / 5 / 13; }
+  
+.Sessions { grid-area: 1 / 5 / 3 / 9; }
+
+.Campaign-info { grid-area: 1 / 1 / 2 / 5; }
+
+.Party { grid-area: 2 / 1 / 3 / 5; }
+
+.Story { grid-area: 3 / 1 / 5 / 9; }
+
+.region-list { grid-area: 1 / 1 / 5 / 8; }
+
+.region-info {
+    grid-area: 1 / 8 / 5 / 13; 
+    padding: 15px;
+    background-color: #5454546a;
+    color: #fff;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.create-town { grid-area: 1 / 9 / 5 / 13; }
+
+.towns-list { grid-area: 1 / 1 / 5 / 9; }
+
+.place-info { grid-area: 1 / 1 / 5 / 5; }
+
+.place-buildings { grid-area: 1 / 5 / 3 / 8; }
+
+.building-info { grid-area: 1 / 8 / 5 / 13; }
+
+.map { grid-area: 3 / 5 / 5 / 8; }
+
+.session-list { grid-area: 1 / 1 / 5 / 4; }
+
+.session-notes { grid-area: 1 / 4 / 5 / 13; }
+
+
+.card-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #1d1d1d6a;
+    padding: 15px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    backdrop-filter: blur(10px);
+    border-top: 1px solid #fff;
+    color: #fff;
+}
+
+.card-head a, .card-body-1 a {
+    padding: 10px 10px;
+    border-radius: 20px;
+    background-color: #930c10;
+    color: #fff;
+    border: none;
+}
+
+.card-body-1 a:hover, .card-head a:hover {
+    background-color: #b53237;
+}
+
+.card-body-1, .edit-form{
+    padding: 15px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #b6e8ffb4;
+    backdrop-filter: blur(10px);
+}
+
+
+.card-body-1 ul {
+    list-style: none;
+}
+
+.card-body-1 li {
+    margin: 10px 0;
+}
+
+.region-card-1, .place-card {
+    width: 30%;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 0 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.region-listing-1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.building-card {
+    padding: 10px;
+    margin: 10px auto;
+    width: 90%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+hr {
+    margin: 15px 0 10px 0;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.place-card p, .region-card-1 p {
+    padding: 15px 0;
+}
+.place-card button, .region-card-1 button {
+    margin-top: 10px;
+}
+
+/*-------------------NPCS----------------*/
+.npcs {
+    margin: 15px 0;
+}
+.npc-stats {
+    display: flex;
+    width: 60%;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+
+.stat {
+    width: 50px;
+    text-align: center;
+}
+
+/*-------------------LOOT----------------*/
+
+.loot-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.loot-item {
+    width: 95%;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 5px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loot-description {
+    display: none; /* Hide the description by default */
+}
+
+/*-------------------QUESTS----------------*/
+.quest-item, .quest-description {
+    margin: 15px 0;
+}
+
+
+/*-------------------DROPDOWN----------------*/
+
+.dropbtn {
+    display: block;
+    width: 100%;
+    background-color: #BB4428;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 7px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #951b00;
+    transition: 0.2s ease-in-out;
+}
+
+.dropdown {
+    
+    position: relative;
+    display: flex;
+    width: 100%;
+    
+}
+
+.dropdown ul {
+    list-style: none;
+    width: 100%;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown-content a {
+    background-color: #ecfffe;
+    min-width: 160px;
+    overflow: auto;
+    z-index: 1;
+    margin-left: 40px;
+    padding: 10px;
+    margin-right: 7px;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: flex;}
+
+.edit-form {
+    display: none;
+    position: relative;
+    margin-top: -385px;
+}
+
+#buildingForm {
+    margin-top: -20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*-------------------FIREFLIES----------------*/
+canvas{
+    width: 100%;
+    height: 100%;
+    filter: blur(1px);
+    z-index: -100;
+    position: absolute;
+  }
+
+/*-------------------BORDERS----------------*/
+.triple-diamond-deco-container {
+    display: grid;
+    grid-template-columns: 
+      [line-start]    1fr
+      [small-start]   8px
+      [large-start]   2px
+      [small-end]   12px
+      [small-start]  2px
+      [large-end]     8px
+      [small-end]     1fr
+      [line-end]
+    ;
+    grid-template-rows: 
+      [large-start] 3px
+      [small-start] 5px
+      [midline]     5px
+      [small-end]   3px
+      [large-end]   
+    ;
+    margin: 15px;
+  /*   background-color: peachpuff; */
+  }
+  
+  .triple-diamond-deco-container .left-line {
+    grid-column: line-start / small-end 1;
+    grid-row: midline / large-end;
+    border-top: 1px solid rgb(255, 255, 255);
+  }
+  
+  .triple-diamond-deco-container .right-line {
+    grid-column: small-start 2 / line-end;
+    grid-row: midline / large-end;
+    border-top: 1px solid rgb(255, 255, 255);
+  }
+  
+  .triple-diamond-deco-container .small-diamond-left {
+    grid-column: small-start 1 / small-end 1;
+    grid-row: small-start / small-end;
+    transform: rotate(45deg);
+    border: 1px solid rgb(255, 255, 255);
+  }
+  
+  .triple-diamond-deco-container .small-diamond-right {
+    grid-column: small-start 2 / small-end 2;
+    grid-row: small-start / small-end;
+    transform: rotate(45deg);
+    border: 1px solid rgb(255, 255, 255);
+  }
+  
+  .triple-diamond-deco-container .large-diamond {
+    grid-area: large;
+    transform: rotate(45deg);
+    border: 1px solid rgb(255, 255, 255);
+  }
+
+/*-------------------SESSIONS----------------*/
+
+.Sessions .card-body-1 a, .story-link {
+    display: block;
+    width: 90%;
+    background-color: #BB4428;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 7px;
+}
+
+.story-link {
+    text-align: center;
+}
+
+.Sessions .card-body-1 a:hover, .story-link {
+    background-color: #951b00;
+    transition: 0.2s ease-in-out;
+
+}
+
+.session-list a {
+    background-color: none;
+}
+
+.session-list li {
+    width: 95%;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 5px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*-------------------PLAYERS----------------*/
+.player-card-1 {
+    width: 25%;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 0 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.player-card-1 hr {
+   margin-bottom: 0px;
+}
+
+
+.player-card-1 p {
+    padding-top: 10px;
+}
+
+.player-card-1 button { margin-top: 10px; }
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+/*-------------------STORY----------------*/
+.story-section {
+    background-color: #fff;
+}
+
+
+
+
+/*-------------------Responzivnost----------------*/
+
+@media only screen and (max-width: 1024px) {
+
+    .grid-container {
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-auto-rows: 1fr; 
+        grid-template-columns: repeat(6, 1fr); 
+        grid-template-rows: repeat(6, 1fr); 
+        gap: 20px 20px; 
+    }
+
+    .Places { grid-area: 3 / 4 / 5 / 7; }
+    .Sessions { grid-area: 1 / 4 / 3 / 7; }
+    .Campaign-info { grid-area: 1 / 1 / 3 / 4; }
+    .Party { grid-area: 3 / 1 / 5 / 4; }
+    .Story { grid-area: 5 / 1 / 7 / 7; }
+    .region-list { grid-area: 1 / 1 / 2 / 7; }
+    .region-info { grid-area: 2 / 1 / 3 / 7; }
+    .create-town { grid-area: 2 / 1 / 3 / 7; }
+    .towns-list { grid-area: 1 / 1 / 2 / 7; }
+    .session-list { grid-area: 1 / 1 / 2 / 7; }
+    .session-notes { grid-area: 2 / 1 / 3 / 7; }
+
+    .grid-container-2 {
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-auto-rows: 1fr; 
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(2, 0.3fr); 
+        gap: 20px 20px; 
+      }
+      .place-info { grid-area: 1 / 1 / 2 / 2; }
+      .place-buildings { grid-area: 1 / 2 / 2 / 3; }
+      .building-info { grid-area: 2 / 1 / 3 / 3; }
+
+    .index-log .container {
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .grid-container {
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-auto-rows: 1fr; 
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: repeat(5, 0.3fr); 
+        gap: 20px 20px; 
+      }
+      .Campaign-info { grid-area: 1 / 1 / 2 / 4; }
+      .Party { grid-area: 2 / 1 / 3 / 4; }
+      .Sessions { grid-area: 3 / 1 / 4 / 4; }
+      .Places { grid-area: 4 / 1 / 5 / 4; }
+      .Story { grid-area: 5 / 1 / 6 / 4; }
+    
+      .grid-container-2 {
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-auto-rows: 1fr; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: repeat(3, 0.3fr); 
+        gap: 20px 20px; 
+      }
+      .place-info { grid-area: 1 / 1 / 2 / 2; }
+      .place-buildings { grid-area: 2 / 1 / 3 / 2; }
+      .building-info { grid-area: 3 / 1 / 4 / 2; }
+
+}
+
+@media only screen and (max-width:  480px) {
+
+
+
+}
