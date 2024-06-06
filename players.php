@@ -15,7 +15,6 @@ if (isset($_SESSION["user_id"])) {
 
 $mysqli = require __DIR__ . "/database.php";
 
-// Check if the user is logged in by verifying the session variable
 if (!isset($_SESSION['user_id'])) {
     die('You are not logged in.');
 }
@@ -24,7 +23,7 @@ $user_id = $_SESSION['user_id'];
 $campaign_id = $_SESSION['campaign_id'];
 
 
-// Fetch regions
+// players
 $sql = "SELECT * FROM players WHERE user_id = ? AND campaign_id = ?";
 $stmt = $mysqli->prepare($sql);
 
