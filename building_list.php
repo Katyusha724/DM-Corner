@@ -1,7 +1,7 @@
 <?php
-require 'database.php'; // Only require once
+require 'database.php'; 
 
-$mysqli = require __DIR__ . "/database.php"; // Initialize $mysqli
+$mysqli = require __DIR__ . "/database.php"; 
 
 include 'place_redirect.php';
 
