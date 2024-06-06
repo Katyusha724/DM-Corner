@@ -4,7 +4,7 @@ require 'database.php';
 
 $redirectUrl = null;
 
-$mysqli = require __DIR__ . "/database.php"; // Initialize $mysqli
+$mysqli = require __DIR__ . "/database.php";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['create_region'])) {
