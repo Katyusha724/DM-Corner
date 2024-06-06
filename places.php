@@ -32,8 +32,7 @@ $result = $stmt->get_result();
 
 <?php include 'head-2.php'; ?>
 <body class="background-2">
-<canvas id="canvas"></canvas>
-
+    
     <?php include 'navigation-2.php'; ?>
     <div class="container">
         
