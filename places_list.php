@@ -1,34 +1,3 @@
-<!--
-<?php
-require 'database.php';
-
-$mysqli = require __DIR__ . "/database.php";
-
-if (!isset($_GET['region_id'])) {
-    die("Region ID is required.");
-}
-$region_id = $_GET['region_id'];
-
-// Fetch place details
-$sql = "SELECT * FROM places WHERE region_id = ?";
-$stmt = $mysqli->prepare($sql);
-$stmt->bind_param('i', $region_id);
-$stmt->execute();
-$result = $stmt->get_result();
-
-while ($row = $result->fetch_assoc()) {
-    echo '<div class="place-card">';
-    echo '<h2>' . htmlspecialchars($row['place_name']) . '</h2>';
-    echo '<p>' . htmlspecialchars($row['tags']) . '</p>';
-    echo '<a href="place_dashboard.php?place_id=' . $row['id'] . '">View Details</a>';
-    echo '</div>';
-}
-
-$stmt->close();
-$mysqli->close();
-?>
--->
-
 <?php
 require 'database.php';
 
