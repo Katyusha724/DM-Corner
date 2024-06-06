@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'database.php'; // Ensure this path is correct
+require 'database.php';
 
 if (isset($_SESSION["user_id"])) {
     
@@ -69,35 +69,25 @@ $mysqli->close();
 
 <div class="grid-container-2">
 
-
-
-
-
 <!---------------------------------------------PLACE INFO/NOTES------------------------------------------->
 
-<div class="place-info">
-<?php include 'place_notes.php'; ?>
-</div>
-
-
-
+    <div class="place-info">
+        <?php include 'place_notes.php'; ?>
+    </div>
 
 <!------------------------------------------BUILDINGS---------------------------------------->
     
-        <div class="place-buildings">
+    <div class="place-buildings">
 
-            <div class="card-head">
-                <h1>Buildings/Rooms</h1> 
-                <button onclick="openAddBuildingForm()">Add new</button> 
-            </div>
-
-            <div class="card-body-1">
-                <?php include 'building_list.php'; ?>
-            </div>
+        <div class="card-head">
+            <h1>Buildings/Rooms</h1> 
+            <button onclick="openAddBuildingForm()">Add new</button> 
         </div>
 
-
-
+        <div class="card-body-1">
+            <?php include 'building_list.php'; ?>
+        </div>
+    </div>
 
 <!-----------------------------------------BUILDING INFO--------------------------------------->
         <div class="building-info">
