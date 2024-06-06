@@ -4,7 +4,7 @@ require 'database.php';
 
 $redirectUrl = null;
 
-$mysqli = require __DIR__ . "/database.php"; // Initialize $mysqli
+$mysqli = require __DIR__ . "/database.php";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['create_building'])) {
@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($stmt === false) {
             die("Prepare failed: " . $mysqli->error);
         }
-        $stmt->bind_param('ii', $building_id, $user_id); // Ensure $building_id and $user_id are correctly assigned
+        $stmt->bind_param('ii', $building_id, $user_id);
         $stmt->execute();
         $result = $stmt->get_result();
         $npc_notes = $result->fetch_assoc();
@@ -69,7 +69,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmt->bind_param('sssiiiiiissii', $npc_name, $npc_class, $npc_race, $Strenght, $Dexterity, $Constitution, $Intelligence, $Wisdom, $Charisma, $npc_abilities, $npc_description, $building_id, $user_id);
         }
 
-        $stmt->execute(); // Make sure to execute the statement
+        $stmt->execute(); 
         $stmt->close();
 
         $redirectUrl = "place_dashboard.php?place_id=$place_id&building_id=$building_id";
@@ -113,7 +113,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmt->bind_param('iissss', $place_id, $user_id, $basic_info, $description, $dm_notes, $points_of_interest);
         }
 
-        $stmt->execute(); // Make sure to execute the statement
+        $stmt->execute();
         $stmt->close();
         $redirectUrl = "place_dashboard.php?place_id=$place_id";
 
@@ -256,8 +256,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header("Location: $redirectUrl");
         exit();
     }
-// Add other form processing as needed
-// Close the database connection if it is open
 
 if ($redirectUrl) {
     header("Location: $redirectUrl");
