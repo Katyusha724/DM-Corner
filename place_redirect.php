@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             die("Prepare failed: " . $mysqli->error);
         }
         $stmt->bind_param('is', $place_id, $building_name);
-        $stmt->execute(); // Make sure to execute the statement
+        $stmt->execute(); 
 
         $stmt->close();
         $redirectUrl = "place_dashboard.php?place_id=$place_id";
@@ -89,7 +89,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($stmt === false) {
             die("Prepare failed: " . $mysqli->error);
         }
-        $stmt->bind_param('ii', $place_id, $user_id); // Ensure $place_id and $user_id are correctly assigned
+        $stmt->bind_param('ii', $place_id, $user_id);
         $stmt->execute();
         $result = $stmt->get_result();
         $existing_notes = $result->fetch_assoc();
@@ -220,7 +220,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($stmt === false) {
             die("Prepare failed: " . $mysqli->error);
         }
-        $stmt->bind_param('ii', $building_id, $user_id); // Ensure $building_id and $user_id are correctly assigned
+        $stmt->bind_param('ii', $building_id, $user_id)
         $stmt->execute();
         $result = $stmt->get_result();
         $quest_notes = $result->fetch_assoc();
@@ -244,7 +244,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmt->bind_param('ssssssssii', $quest_name, $goal, $npc, $place, $description, $reward_name, $reward_description, $reward_price, $building_id, $user_id);
         }
     
-        $stmt->execute(); // Make sure to execute the statement
+        $stmt->execute();
         $stmt->close();
     
         $redirectUrl = "place_dashboard.php?place_id=$place_id&building_id=$building_id";
@@ -257,10 +257,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit();
     }
 
-if ($redirectUrl) {
-    header("Location: $redirectUrl");
-    exit();
-}
 }
 
 ob_end_flush();
