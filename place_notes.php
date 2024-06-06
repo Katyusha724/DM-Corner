@@ -6,43 +6,6 @@ $place_id = $_GET['place_id'];
 $user_id = $_SESSION['user_id'];
 
 include 'place_redirect.php';
-/*
-if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['save_changes'])) {
-    $basic_info = $mysqli->real_escape_string($_POST['basic_info']);
-    $description = $mysqli->real_escape_string($_POST['description']);
-    $dm_notes = $mysqli->real_escape_string($_POST['dm_notes']);
-    $points_of_interest = $mysqli->real_escape_string($_POST['points_of_interest']);
-
-    // Check if notes already exist
-    $sql = "SELECT * FROM place_notes WHERE place_id = ? AND user_id = ?";
-    $stmt = $mysqli->prepare($sql);
-    $stmt->bind_param('ii', $place_id, $user_id);
-    $stmt->execute();
-    $result = $stmt->get_result();
-    $existing_notes = $result->fetch_assoc();
-    $stmt->close();
-
-    if ($existing_notes) {
-        // Update existing notes
-        $sql = "UPDATE place_notes SET basic_info = ?, description = ?, dm_notes = ?, points_of_interest = ? WHERE place_id = ? AND user_id = ?";
-        $stmt = $mysqli->prepare($sql);
-        $stmt->bind_param('ssssii', $basic_info, $description, $dm_notes, $points_of_interest, $place_id, $user_id);
-    } else {
-        // Insert new notes
-        $sql = "INSERT INTO place_notes (place_id, user_id, basic_info, description, dm_notes, points_of_interest) VALUES (?, ?, ?, ?, ?, ?)";
-        $stmt = $mysqli->prepare($sql);
-        $stmt->bind_param('iissss', $place_id, $user_id, $basic_info, $description, $dm_notes, $points_of_interest);
-    }
-
-    if ($stmt->execute()) {
-        header("Location: place_dashboard.php?place_id=$place_id");
-        exit;
-    } else {
-        echo "Error: " . $stmt->error;
-    }
-
-    $stmt->close();
-}*/
 $mysqli->close();
 ?>
 
