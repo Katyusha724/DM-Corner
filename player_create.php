@@ -1,6 +1,5 @@
 <?php
 require 'database.php'; 
-// Fetch user ID from session
 $user_id = $_SESSION['user_id'];
 
 
