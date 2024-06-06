@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'database.php'; // Ensure this path is correct
+require 'database.php';
 
 if (isset($_SESSION["user_id"])) {
     
