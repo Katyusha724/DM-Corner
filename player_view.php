@@ -3,7 +3,7 @@ require 'database.php';
 $mysqli = require __DIR__ . "/database.php";
 
 $campaign_id = $_SESSION['campaign_id'];
-// Fetch region details
+// Fetch player details
 $sql = "SELECT * FROM players WHERE campaign_id = ?";
 $stmt = $mysqli->prepare($sql);
 $stmt->bind_param('i', $campaign_id);
