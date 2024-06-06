@@ -10,20 +10,6 @@
             </a>
         </div>
     </div>
-
-    <!--
-    <div class="container">
-
-        <h3><a href="../index.php">Dungeon Master Corner</h3>
-        <ul>
-            <li>About</li>
-            <li><a href="../Log-in/login.php">Log In</a></li>
-            <li><a href="../Sign-in/signup.php">Sign Up</a></li>
-        </ul>
-
-    </div>
-    -->
-
 </nav>
 
 <script>
