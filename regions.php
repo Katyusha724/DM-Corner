@@ -15,7 +15,6 @@ if (isset($_SESSION["user_id"])) {
 
 $mysqli = require __DIR__ . "/database.php";
 
-// Check if the user is logged in by verifying the session variable
 if (!isset($_SESSION['user_id'])) {
     die('You are not logged in.');
 }
