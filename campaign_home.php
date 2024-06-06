@@ -1,6 +1,6 @@
 <?php
 session_start();
-require __DIR__ . '/database.php'; // Ensure this path is correct
+require __DIR__ . '/database.php';
 
 
 if (isset($_SESSION["user_id"])) {
@@ -20,7 +20,7 @@ if (!isset($_SESSION['user_id'])) {
     die('You are not logged in.');
 }
 
-$user_id = $_SESSION['user_id']; // Get the logged-in user's ID from the session
+$user_id = $_SESSION['user_id'];
 
 // Get the campaign ID from the URL parameter
 if (!isset($_GET['id'])) {
