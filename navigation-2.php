@@ -14,29 +14,6 @@
             </a>
         </div>
     </div>
-
-    <!--
-    <div class="container">
-        <h3><a href="index-log.php">Dungeon Master Corner</a></h3>
-        <ul>
-            <li>Campaings</li>
-        </ul>
-
-        <?php if (isset($user)): ?>
-            
-            <ul>
-                <li><b><?= htmlspecialchars($user["username"]) ?></b></li>
-                <li><a href="Log-in/logout.php">Log out</a></li>
-            </ul>
-            
-        <?php else: ?>
-            
-            <p><a href="Log-in/login.php">Log in</a> or <a href="Sign-in/signup.html">sign up</a></p>
-            
-        <?php endif; ?>
-    </div>
-        -->
-    
 </nav>
 
 
