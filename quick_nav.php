@@ -1,5 +1,5 @@
 <?php
-require 'database.php'; // Ensure this path is correct
+require 'database.php';
 $user_id = $_SESSION['user_id'];
 
 // Fetch Campaign Name
@@ -45,21 +45,4 @@ if (isset($_SESSION['place_id'])) {
 }
 
 $mysqli->close();
-
-/*
-echo '<nav class="quick-nav">';
-echo '<a href="campaign_dashboard.php?campaign_id=' . htmlspecialchars($campaign_id) . '">' . htmlspecialchars($campaign_name) . '</a> / ';
-
-if (isset($region_id) && isset($campaign_id)) {
-    echo '<a href="regions.php?campaign_id=' . htmlspecialchars($campaign_id) . '">' . 'Regions' . '</a> / ';
-    echo '<a href="region_view.php?region_id=' . htmlspecialchars($region_id) . '">' . htmlspecialchars($region_name) . '</a> / ';
-}
-
-if (isset($place_id)) {
-    echo '<a href="places.php?region_id=' . htmlspecialchars($region_id) . '">' . 'Places' . '</a> / ';
-    echo '<span>' . htmlspecialchars($place_name) . '</span>';
-}
-
-echo '</nav>';
-*/
 ?>
